@@ -1,0 +1,26 @@
+body{
+  background: black
+}
+
+
+#teste {
+    display: flex;
+    justify-content: center;
+    justify-items: end;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+img{
+  border-radius:10%;
+}
+
+h1{
+  font-size:500%;
+  color:white;
+}
+
+p{
+  padding-top:5%;
+  color:white;
+}
