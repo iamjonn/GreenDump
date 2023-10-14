@@ -1,0 +1,84 @@
+@import url('');
+
+body {
+    background: rgb(124,213,77);
+    background: radial-gradient(circle, rgba(124,213,77,1) 0%, rgba(32,152,20,1) 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.box-centralizado {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 40px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+input, button {
+    margin: 10px 0;
+    padding: 15px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    
+}
+
+button {
+    background-color: rgba(124, 213, 77, 1);
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: 'Patrick', cursive;
+    padding: 15px 20px;
+    border-radius: 25px;
+    /* box-shadow: 1px 2px 2px black; */
+    transition: background-color 0.3 ease;}
+
+button:hover {
+    background-color: color rgb(14, 63, 14);
+}
+
+
+.bemvindo {
+    font-family: 'Patrick', cursive;
+    color:rgb(13, 39, 13) ;
+}
+.green {
+    color:#106210;
+    font-family: 'Lilita One', cursive;
+    text-shadow: 2px 2px 2px black;
+}
+
+.dump {
+    color: rgb(119, 190, 72);
+    font-family: 'Lilita One', sans-serif;
+    text-shadow: 2px 2px 2px black;
+}
+
+
+/* .fa-regular.fa-user { */
+    /* font-size: 40px; */
+    /* color: #186b18; */
+    /* transition: color 0.3s ease;  */
+/* } */
+
+

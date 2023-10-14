@@ -1,84 +1,85 @@
 @import url('');
-
 body {
-    background: rgb(124,213,77);
-    background: radial-gradient(circle, rgba(124,213,77,1) 0%, rgba(32,152,20,1) 100%);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+  background-image: url('img/homeGreem.jpg');
+  background-repeat: no-repeat; 
+  background-size: 100% 800px;
+} 
+ 
+ /* topo */
+ header {
+  position: relative;
+  width: 100%;
+  top: 0;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  background-color:transparent;
 }
 
-.box-centralizado {
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 40px;
-    text-align: center;
-    border-radius: 15px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    margin: 20px;
+.header-left {
+  position: relative;
+  width: 20%;
+  min-width: 200px;
+  height: auto;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
+.logo img {
+  width: 50%;
+  margin-top: 5px;
+  margin-right: 30%;
+  height: 85%;
+  border-radius:10px;
+
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
 }
 
-input, button {
-    margin: 10px 0;
-    padding: 15px;
-    width: 250px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    
+.logo:hover{
+  border: none;
+  transition: none;
+ animation: none;
 }
 
-button {
-    background-color: rgba(124, 213, 77, 1);
-    color: white;
-    text-shadow: 2px 2px 2px black;
-    border: none;
-    cursor: pointer;
-    font-size: 18px;
-    font-family: 'Patrick', cursive;
-    padding: 15px 20px;
-    border-radius: 25px;
-    /* box-shadow: 1px 2px 2px black; */
-    transition: background-color 0.3 ease;}
-
-button:hover {
-    background-color: color rgb(14, 63, 14);
+.header-right {
+  position: relative;
+  width: 60%;
+  min-width: 2000px;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  align-items: center;
 }
 
+/* 01101010 01101111 01101110  */
 
-.bemvindo {
-    font-family: 'Patrick', cursive;
-    color:rgb(13, 39, 13) ;
-}
-.green {
-    color:#106210;
-    font-family: 'Lilita One', cursive;
-    text-shadow: 2px 2px 2px black;
+.header-right ul {
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  width: 100%;
+  gap: 10%;
 }
 
-.dump {
-    color: rgb(119, 190, 72);
-    font-family: 'Lilita One', sans-serif;
-    text-shadow: 2px 2px 2px black;
+.header-right ul li {
+  float: left;
+  width: auto;
+  font-size: 20px;
+  list-style: none;
+  background-color: transparent;
 }
 
 
-/* .fa-regular.fa-user { */
-    /* font-size: 40px; */
-    /* color: #186b18; */
-    /* transition: color 0.3s ease;  */
-/* } */
-
-
+header a:hover {
+  /*color: linear-gradient(#8e6f14,#cbb26a,#8e6f14);*/
+ color: #ffffff;
+ transition: all 1s ease;
+ border: #ffffff solid 1px;
+ border-top:none;
+ border-right:none;
+ border-left:none;
+ transition: all 5s;
+ animation: slide-in 3s ease-out forwards;
+}
