@@ -1,6 +1,15 @@
 @import url('');
 
 body {
+    background: url('/img/loginescurecido.jpg') no-repeat center center/cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+/* body {
     background: rgb(124,213,77);
     background: radial-gradient(circle, rgba(124,213,77,1) 0%, rgba(32,152,20,1) 100%);
     background-size: cover;
@@ -13,7 +22,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-}
+} */
 
 .box-centralizado {
     background-color: rgba(255, 255, 255, 0.8);
@@ -41,25 +50,28 @@ input, button {
 }
 
 button {
-    background-color: rgba(124, 213, 77, 1);
+    background: rgb(71, 176, 14);
+    background: radial-gradient(circle, rgb(89, 174, 44) 0%, rgb(34, 155, 23) 100%);
     color: white;
     text-shadow: 2px 2px 2px black;
     border: none;
     cursor: pointer;
     font-size: 18px;
-    font-family: 'Patrick', cursive;
+    font-family: 'Mooli', sans-serif;
     padding: 15px 20px;
     border-radius: 25px;
-    /* box-shadow: 1px 2px 2px black; */
-    transition: background-color 0.3 ease;}
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
 
 button:hover {
-    background-color: color rgb(14, 63, 14);
+    background-color: rgba(14, 63, 14, 1);
+    transform: scale(1.1);
 }
 
 
+
 .bemvindo {
-    font-family: 'Patrick', cursive;
+    font-family: 'Mooli', sans-serif;
     color:rgb(13, 39, 13) ;
 }
 .green {
@@ -80,5 +92,3 @@ button:hover {
     /* color: #186b18; */
     /* transition: color 0.3s ease;  */
 /* } */
-
-
