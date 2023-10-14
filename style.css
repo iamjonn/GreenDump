@@ -75,7 +75,7 @@ header a:hover {
  border-top:none;
  border-right:none;
  border-left:none;
- transition: all 5s;
+ transition: all 1s;
  animation: slide-in 3s ease-out forwards;
 }
 
@@ -85,7 +85,15 @@ header a:hover {
   height:40px;
   width: 90px;
   margin-right:2%;
-  background: ;
+  background: #3CB371;
+  color:black;
+}
+
+#login:hover{
+  background: #90EE90;
+  color:black;
+  transition: all 1s;
+
 }
 
 
