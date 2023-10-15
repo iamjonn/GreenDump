@@ -1,5 +1,6 @@
 @import url('');
 
+
  /* topo */
  header {
   position: relative;
@@ -20,13 +21,13 @@
 
 .logo img {
   width: 70%;
-  margin-top: 20px;
+  margin-top: 10px;
   margin-left:20%;
   height: 70%;
   border-radius:10px;
 
   -webkit-filter: drop-shadow(0px 0px 20px rgba(0 0 0 / 90%)); 
-  filter: drop-shadow(0px 5px 0px rgba(0 0 0 / 90%));
+  filter: drop-shadow(0px 6px 0px rgba(0 0 0 / 90%));
 
   pointer-events: none;
   user-select: none;
@@ -47,7 +48,7 @@
 .header-right {
   position: relative;
   width: 60%;
-  min-width: 20px;
+  min-width: 30px;
   display: flex;
   justify-content: center;
   align-self: center;
@@ -60,7 +61,6 @@
   align-self: center;
   display: flex;
   justify-content: center;
-  padding: 0;
   width: 100%;
   gap: 5%;
 
@@ -72,7 +72,7 @@
   font-size: 22px;
   list-style: none;
   background-color: transparent;
-  color:#106210;
+  color:#ffffff;
   font-family: 'Lilita One', cursive;
   text-shadow: 1px 1px 0px black;
   cursor: pointer;
@@ -81,9 +81,9 @@
 
 header a:hover {
   /*color: linear-gradient(#8e6f14,#cbb26a,#8e6f14);*/
- color: #ffffff;
+ color: #106210;
  transition: all 1s ease;
- border: #ffffff solid 1px;
+ border: #106210 solid 1px;
  border-top:none;
  border-right:none;
  border-left:none;
@@ -121,25 +121,48 @@ header a:hover {
 
 
 /*tela principal*/
-body {
+#TelaPrincipal{
+  top:0;
   background-image: url('img/homeGreem.png');
   background-repeat: no-repeat; 
-  background-size: 100% 850px;
+  background-size: 100% 792px;
+  position:absolute;
+  height:790px;
+  width:100%;
+  
 } 
 
 .vid {
+  height:720px;
   display: flex;
-  padding-top: 190px;
-  margin-right:4%;
-  margin-left:54%;
   flex-direction: row-reverse;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   background:transparent;
+  position: absolute;
+  width:100%;
+  
 }
 
 .vid iframe{
   border-radius:45px;
-  width:700px;
-  height:330px;
+  width:38%;
+  height:320px;
+  margin-bottom:3%;
+  margin-left:53%;
+}
+
+/*buscador de pontos de coleta*/
+
+.Iabree{
+  width:99%;
+  position: absolute;
+  height:1800px;
+  z-index:-1;
+}
+
+#abree{
+  padding-top:30px;
+  height:1777px;
+  width:100%;
 }
