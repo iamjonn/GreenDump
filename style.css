@@ -1,15 +1,33 @@
 @import url('');
 
 
+ body, html {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+ }
+
+ /* body {
+  margin: 0;
+  padding:0;
+  background-image: url('img/homeGreem.png');
+  z-index: 2;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; */
+/* } */
  /* topo */
  header {
-  position: relative;
-  width: 100%;
-  top: 0;
-  height: 90px;
+  height: 10vh;
   display: flex;
   justify-content: space-between;
   background-color:transparent;
+  align-items: center;
+  padding: 0 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 2;
 }
 
 .header-left {
@@ -20,10 +38,10 @@
 }
 
 .logo img {
-  width: 70%;
+  max-width: 100%;
+  max-height: 100%;
   margin-top: 10px;
   margin-left:20%;
-  height: 70%;
   border-radius:10px;
 
   -webkit-filter: drop-shadow(0px 0px 20px rgba(0 0 0 / 90%)); 
@@ -119,20 +137,35 @@ header a:hover {
 
 }
 
+#TelaPrincipal {
+  background-image: url('img/homeGreem.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  height: 100vh; 
+  position: relative; 
+  z-index: 1;
+}
 
+#TelaPrincipal {
+  width: 100%;
+  height: flex;
+}
 /*tela principal*/
-#TelaPrincipal{
-  top:0;
+/* #TelaPrincipal{
   background-image: url('img/homeGreem.png');
   background-repeat: no-repeat; 
-  background-size: 100% 792px;
+  background-size: contain;
+  background-position: center center;
   position:absolute;
-  height:790px;
-  width:100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   
-} 
+}  */
 
-.vid {
+/* .vid {
   height:720px;
   display: flex;
   flex-direction: row-reverse;
@@ -150,7 +183,7 @@ header a:hover {
   height:320px;
   margin-bottom:3%;
   margin-left:53%;
-}
+} */
 
 /*buscador de pontos de coleta*/
 
@@ -158,11 +191,30 @@ header a:hover {
   width:99%;
   position: absolute;
   height:1800px;
-  z-index:-1;
+  top: 25vh;
+  z-index: -1;
 }
 
 #abree{
   padding-top:30px;
   height:1777px;
   width:100%;
+}
+
+footer {
+  background-color: #106210; 
+  color: #ffffff;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  z-index: 2;
+}
+
+footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+footer p {
+  margin: 0;
 }
