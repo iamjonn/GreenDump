@@ -22,12 +22,20 @@
   display: flex;
   justify-content: space-between;
   background-color:transparent;
+  background:transparent;
   align-items: center;
   padding: 0 20px;
   position: fixed;
   width: 100%;
   top: 0;
-  z-index: 2;
+  z-index: 20;
+  transition: background-color 0.3s ease; 
+  
+}
+
+header a {
+  text-decoration: none;
+  color:white;
 }
 
 .header-left {
@@ -74,6 +82,11 @@
 }
 
 /* 01101010 01101111 01101110  */
+
+
+.header-scroll {
+  background-color:rgb(46,139,87,0.8);
+}
 
 .header-right ul {
   align-self: center;
@@ -138,12 +151,12 @@ header a:hover {
 }
 
 #TelaPrincipal {
-  background-image: url('img/green3.1.jpg');
+  background-image: url('img/homeGreem.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
-  height: 100vh; 
-  position: relative; 
+  height: 94vh; 
+  position: absolute; 
   z-index: 1;
 }
 
@@ -165,56 +178,168 @@ header a:hover {
   
 }  */
 
-/* .vid {
+ .vid {
   height:720px;
   display: flex;
+  margin-top:9%;
   flex-direction: row-reverse;
   align-items: center;
   justify-content: center;
   background:transparent;
   position: absolute;
   width:100%;
+  z-index:1;
   
 }
 
 .vid iframe{
   border-radius:45px;
   width:38%;
-  height:320px;
+  height:380px;
   margin-bottom:3%;
-  margin-left:53%;
-} */
+  margin-left:57%;
+} 
 
 /*buscador de pontos de coleta*/
 
 .Iabree{
   width:99%;
   position: absolute;
-  height:1800px;
+  height:200px;
   top: 25vh;
   z-index: -1;
 }
 
 #abree{
   padding-top:30px;
-  height:1777px;
+  height:1767px;
   width:100%;
 }
+/*Lista de descarte*/
+#Descarte{
+  top: 200vh;
+  position: absolute;
+  z-index: 4;
+  display: flex;
+  justify-items: start;
+  flex-direction: column;
+  align-items: center;
+  background: radial-gradient(circle, rgb(89, 174, 44) 100%, rgb(34, 155, 23) 0%);
+  color:white;
+  width:60%;
+  height:720px;
+  font-family: 'Lilita One', cursive;
+  text-align:center;
+  
+}
 
+#Descarte h1{
+  margin-top:20%;
+
+}
+
+#Descarte p{
+  font-size:18px;
+  text-align:start;
+
+}
+
+#Descarte button{
+  font-size:16px;
+  height:40px;
+  background: #106210;
+  color:white;
+  font-family: 'Lilita One', cursive;
+  cursor: pointer;
+  border-radius:20px;
+  border:solid black 1px;
+
+}
+
+#Descarte button:hover{
+  background: #90EE90;
+  color:black;
+  transition: all 1s;
+
+}
+
+
+#imagemDescarte{
+    top: 200vh;
+    position: absolute;
+    z-index: 4;
+    display: block;
+    justify-items: start;
+    background-color: rgb(248,248,255);
+    color: white;
+    width: 40%;
+    height: 720px;
+    margin-left: 60%;
+    justify-content: space-around;
+    align-items: center;
+    padding-left:5%;
+
+    pointer-events: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+ /*========SCROLL==========*/
+ ::-webkit-scrollbar {
+  width: 13px;
+  height: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    to bottom,
+    rgb(89, 174, 44),
+    rgb(34, 155, 23));
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-track {
+  background: #474747;
+}
+
+
+
+/*fotter*/
 footer {
-  background-color: #106210; 
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgb(71, 176, 14);
+  background: radial-gradient(circle, rgb(89, 174, 44) 0%, rgb(34, 155, 23) 100%);
   color: #ffffff;
   text-align: center;
   padding: 20px 0;
-  position: relative;
-  z-index: 2;
+  top: 274vh;
+  height:120px;
+  z-index:3;
 }
 
 footer .container {
   max-width: 1200px;
   margin: 0 auto;
+   position: absolute;
+  z-index: 3;
 }
 
 footer p {
   margin: 0;
 }
+
+
+footer h2, footer .footer-bottom p {
+  cursor: default;
+  margin: 15px;
+}
+
+footer h2 {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 20px;
+}
+
