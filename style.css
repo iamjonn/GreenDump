@@ -488,14 +488,25 @@ footer {
 }
 
 /*-------------------RESPONSIVIDADE MOBILE Sansung-----------*/
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 390px) {
+
+  #TelaPrincipal {
+    height:51vh; 
+  }
+  .vid {
+    margin-top:38%;
+    height:400px;
+  }
+  .vid iframe{
+    height:110px;
+    margin-bottom:15%;
+    width:50%;
+  } 
 
 
-
-
-
-
-
+  footer {
+    top: 320vh;
+    }
 
 }
 
