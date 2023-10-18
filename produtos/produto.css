@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.imagem {
+    background-image: url('/img/emabada.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 95vh;
+    z-index: 0;
+    justify-content: center;
+
+}
+
+h1#title {
+    text-align: center;
+    color: white;
+    font-family: 'Mooli', sans-serif; 
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    
+}
+.barra_pesquisa {
+    padding: 2vh;
+    text-align: center;
+    border-radius: 30px;
+    margin-top: 20px;
+    position: fixed;
+    width: calc(100% - 40px); 
+    max-width: 300px;
+    background-color: rgba(255, 255,255, 0.9); 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    /* transform: translateY(-50%); */
+
+}
+
+.barra_pesquisa input[type="text"] {
+    padding: 30px;
+    border: none;
+    border-radius: 30px;
+    width: 100%; 
+    font-family: 'Mooli', sans-serif;
+    box-sizing: border-box;
+
+}
+
+.barra_pesquisa i {
+    position: absolute;
+    bottom: 35vh;
+    top: calc(100% + 20px);
+    left: 50%;
+    transform: translateX(-50%);
+    transition: transform 0.3s ease;
+    font-size: 40px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.barra_pesquisa i:hover {
+    transform: translateX(-50%) scale(1.5); /* Aumenta o tamanho do ícone quando o mouse passa por cima */
+}
+
+.todos {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    font-family: 'Mooli', sans-serif;
+
+}
+
+.cabeçalho {
+    width: 100%;
+    background-color: rgba(40, 205, 40, 0.1);
+    padding: 25px 0;
+    text-align: left;
+    color: white;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+
+}
+
+.cabeçalho a {
+    transition: all0.3 ease;
+    color: white;
+}
+
+.cabeçalho a:hover i {
+    transform: scale(1.2);
+    color: white;
+
+}
+
+.cabeçalho a i {
+    font-size: 30px;
+    margin-left: 10px;
+    transition: all 0.3s ease;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+
+}
+
