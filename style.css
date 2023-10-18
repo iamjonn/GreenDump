@@ -431,7 +431,7 @@ footer {
 }
 
 /*-------------------RESPONSIVIDADE MOBILE iphone-----------*/
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 500px) {
 
 
   .logo img {
