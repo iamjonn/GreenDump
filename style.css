@@ -507,6 +507,22 @@ footer {
   footer {
     top: 320vh;
     }
-
+    #Descarte{
+      top: 210vh;
+      height:635px;
+      width:100%;
+    }
+  
+    #imagemDescarte{
+      top: 290vh;
+      padding-left:0%;
+      margin-left:0%;
+      height:435px;
+      width:100%;
+    }
+   
+    footer {
+      top: 345vh;
+      }
 }
 
