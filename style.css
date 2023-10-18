@@ -158,6 +158,7 @@ header a:hover {
   height: 94vh; 
   position: absolute; 
   z-index: 1;
+  padding-left:9%;
 }
 
 #TelaPrincipal {
@@ -179,12 +180,12 @@ header a:hover {
 }  */
 
  .vid {
-  height:720px;
+  height:725px;
   display: flex;
-  margin-top:9%;
+  margin-top:10%;
   flex-direction: row-reverse;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   background:transparent;
   position: absolute;
   width:100%;
@@ -193,9 +194,10 @@ header a:hover {
 }
 
 .vid iframe{
-  border-radius:45px;
+  border-radius:50px 0px 0px 50px;
+  border-right:none;
   width:38%;
-  height:380px;
+  height:390px;
   margin-bottom:3%;
   margin-left:57%;
 } 
@@ -272,12 +274,12 @@ header a:hover {
     justify-items: start;
     background-color: rgb(248,248,255);
     color: white;
-    width: 40%;
+    width: 100%;
     height: 720px;
     margin-left: 60%;
     justify-content: space-around;
     align-items: center;
-    padding-left:5%;
+    padding-left:3%;
 
     pointer-events: none;
   user-select: none;
@@ -343,3 +345,89 @@ footer h2 {
   font-size: 20px;
 }
 
+/*-------------------RESPONSIVIDADE-----------*/
+@media screen and (max-width: 1560px) {
+  #TelaPrincipal {
+    height: 80vh; 
+    padding-left:9%;
+}
+  
+
+  .vid {
+    margin-top:8%;
+}
+  
+  #Descarte{
+    top: 190vh;
+}
+  #imagemDescarte{
+    top: 190vh;
+    padding-left:0%;
+    margin-left: 57%;
+}
+  footer {
+  top: 264vh;
+}
+}
+/*-------------------RESPONSIVIDADE 2-----------*/
+@media screen and (max-width: 1300px) {
+  #TelaPrincipal {
+    height: 72vh; 
+    padding-left:12%;
+}
+.vid {
+  margin-top:4%;
+  height:625px;
+}
+#Descarte{
+  top: 188vh;
+}
+#imagemDescarte{
+  top: 188vh;
+  padding-left:0%;
+  margin-left: 57%;
+}
+footer {
+top: 262vh;
+}
+}
+
+
+
+
+
+/*-------------------RESPONSIVIDADE 3-----------*/
+@media screen and (max-width: 1050px) {
+  #TelaPrincipal {
+    height: 45vh; 
+    padding-left:10%;
+}
+.vid {
+  margin-top:0%;
+  height:625px;
+}
+.vid iframe{
+  height:290px;
+  margin-bottom:15%;
+} 
+.Iabree{
+  height:200px;
+  top: 7vh;
+ 
+}
+#Descarte{
+  top: 200vh;
+  height:635px;
+}
+#imagemDescarte{
+  top: 200vh;
+  padding-left:0%;
+  margin-left: 57%;
+  height:635px;
+}
+footer {
+  top: 266vh;
+  }
+
+
+}
