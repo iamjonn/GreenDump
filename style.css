@@ -255,7 +255,12 @@ header a:hover {
   cursor: pointer;
   border-radius:20px;
   border:solid black 1px;
+  
 
+}
+#Descarte button a{
+text-decoration: none;
+color:white;
 }
 
 #Descarte button:hover{
@@ -503,18 +508,14 @@ footer {
     width:50%;
   } 
 
-
-  footer {
-    top: 320vh;
-    }
     #Descarte{
-      top: 210vh;
+      top: 230vh;
       height:635px;
       width:100%;
     }
   
     #imagemDescarte{
-      top: 290vh;
+      top: 310vh;
       padding-left:0%;
       margin-left:0%;
       height:435px;
@@ -522,7 +523,7 @@ footer {
     }
    
     footer {
-      top: 345vh;
+      top: 365vh;
       }
 }
 
