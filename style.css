@@ -445,7 +445,7 @@ footer {
   }
 
   #TelaPrincipal {
-    height: 47vh; 
+    height: 48vh; 
     padding-left:0%;
     background-image: url('img/HomeGreen.Mobile.png');
 }
@@ -491,7 +491,7 @@ footer {
 @media screen and (max-width: 390px) {
 
   #TelaPrincipal {
-    height:51vh; 
+    height:50vh; 
   }
   .vid {
     margin-top:38%;
