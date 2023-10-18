@@ -499,11 +499,11 @@ footer {
     height:50vh; 
   }
   .vid {
-    margin-top:38%;
+    margin-top:32%;
     height:400px;
   }
   .vid iframe{
-    height:110px;
+    height:100px;
     margin-bottom:15%;
     width:50%;
   } 
