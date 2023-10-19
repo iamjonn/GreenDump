@@ -399,6 +399,15 @@ footer h2 {
 #Descarte{
   top: 188vh;
 }
+
+#Descarte h1{
+  font-size:20px;
+}
+
+#Descarte p{
+  font-size:10px;
+  margin:0;
+}
 #imagemDescarte{
   top: 188vh;
   padding-left:0%;
