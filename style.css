@@ -85,7 +85,8 @@ header a {
 
 
 .header-scroll {
-  background-color:rgb(46,139,87,0.8);
+  background-color:#59975f;
+ /* background-color: rgb(248,248,255);*/
 }
 
 .header-right ul {
@@ -226,8 +227,10 @@ header a:hover {
   justify-items: start;
   flex-direction: column;
   align-items: center;
-  background: radial-gradient(circle, rgb(89, 174, 44) 100%, rgb(34, 155, 23) 0%);
+  /*background: radial-gradient(circle, rgb(89, 174, 44) 100%, rgb(34, 155, 23) 0%);*/
+  background: linear-gradient(to right, #86c3a5, #75b364);
   color:white;
+  background-color:#59975f;
   width:60%;
   height:720px;
   font-family: 'Lilita One', cursive;
@@ -236,40 +239,44 @@ header a:hover {
 }
 
 #Descarte h1{
-  margin-top:20%;
+  margin-top:15%;
+  font-family:roboto;
 
 }
 
 #Descarte p{
   font-size:18px;
   text-align:start;
+  margin:5%;
 
 }
 
 #Descarte button{
-  font-size:16px;
+  font-size:18px;
   height:40px;
-  background: #106210;
+  background: linear-gradient(to right, #86c3a5, #75b364);
   color:white;
   font-family: 'Lilita One', cursive;
   cursor: pointer;
   border-radius:20px;
   border:solid black 1px;
-  
-
 }
 #Descarte button a{
 text-decoration: none;
-color:white;
+color:black;
 }
 
 #Descarte button:hover{
-  background: #90EE90;
-  color:black;
+  background: #106210;
+  color:white;
   transition: all 1s;
-
 }
-
+#Descarte button a:hover{
+  text-decoration: none;
+  color:white;
+  transition: all 1s;
+  }
+  
 
 #imagemDescarte{
     top: 200vh;
@@ -316,8 +323,9 @@ footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-  background: rgb(71, 176, 14);
-  background: radial-gradient(circle, rgb(89, 174, 44) 0%, rgb(34, 155, 23) 100%);
+ /* background: rgb(71, 176, 14);
+  background: radial-gradient(circle, rgb(89, 174, 44) 0%, rgb(34, 155, 23) 100%);*/
+  background-color:#106210;
   color: #ffffff;
   text-align: center;
   padding: 20px 0;
@@ -353,7 +361,7 @@ footer h2 {
 /*-------------------RESPONSIVIDADE-----------*/
 @media screen and (max-width: 1560px) {
   #TelaPrincipal {
-    height: 80vh; 
+    height: 95vh; 
     padding-left:9%;
 }
   
@@ -371,13 +379,13 @@ footer h2 {
     margin-left: 57%;
 }
   footer {
-  top: 264vh;
+  top: 290vh;
 }
 }
 /*-------------------RESPONSIVIDADE 2-----------*/
 @media screen and (max-width: 1300px) {
   #TelaPrincipal {
-    height: 72vh; 
+    height: 82vh; 
     padding-left:12%;
 }
 .vid {
