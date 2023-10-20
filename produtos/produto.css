@@ -116,3 +116,48 @@ h1#title {
 
 }
 
+/* JS */
+
+.title{
+    display:none;
+}
+
+
+.barra_pesquisa2{
+    top:15%;
+    max-width: 700px;
+}
+.ue{
+margin-top:22%;
+margin-left:4%;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 19%;
+    border-radius: 15px;
+    display: inline-block;
+    margin: 1%;
+    background:#DCDCDC;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  .info {
+    
+  }
+  
+  .container {
+    padding: 0px 0px 0px 10px;
+    display: flex; /* Adiciona Flexbox ao contêiner */
+    
+  }
+
+  .card img {
+    float: right;
+    max-width: 40%; /* Ajusta a largura máxima da imagem para metade do cartão */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-left: 16%;
+    border-radius:10px;
+  }
