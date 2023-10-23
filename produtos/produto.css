@@ -8,12 +8,13 @@ body {
 }
 
 .imagem {
-    background-image: url('/img/emabada.jpg');
+   /* background-image: url('/img/emabada.jpg');
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;*/
+    background-color:#F8F8FF;
     width: 100vw;
-    height: 95vh;
+    height: 100vh;
     z-index: 0;
     justify-content: center;
 
@@ -71,7 +72,8 @@ h1#title {
 }
 
 .barra_pesquisa i:hover {
-    transform: translateX(-50%) scale(1.5); /* Aumenta o tamanho do ícone quando o mouse passa por cima */
+    transform: translateX(-50%) scale(1.1); /* Aumenta o tamanho do ícone quando o mouse passa por cima */
+    cursor:pointer;
 }
 
 .todos {
@@ -86,7 +88,7 @@ h1#title {
 
 .cabeçalho {
     width: 100%;
-    background-color: rgba(40, 205, 40, 0.1);
+    background: linear-gradient(to right, #86c3a5, #75b364);
     padding: 25px 0;
     text-align: left;
     color: white;
@@ -116,10 +118,40 @@ h1#title {
 
 }
 
-/* JS */
+.cabeçalho img{
+margin-left:43%;
+width:10%;
+-webkit-filter: drop-shadow(0px 0px 20px rgba(0 0 0 / 90%)); 
+  filter: drop-shadow(0px 6px 0px rgba(0 0 0 / 90%));
+}
 
+.caixa-preta {
+    background: linear-gradient(to right, #86c3a5, #75b364);
+    padding: 20px;
+    border-radius: 15px;
+    display: inline-block;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height:600px;
+    width:35%;
+}
+
+
+/* JS */
 .title{
-    display:none;
+visibility: hidden;
+margin-top:3%;
+width:100%;
+
+}
+.title:before{
+    content: " Resultado da busca! ";
+    visibility:visible;
+    margin-right:55%;
+    color:#106210;
+    text-shadow: 2px 1px 2px rgba(0, 0, 0, 1.8);
 }
 
 
@@ -127,10 +159,13 @@ h1#title {
     top:15%;
     max-width: 700px;
 }
-.ue{
+.ue2{
 margin-top:22%;
 margin-left:4%;
-
+margin-right:4%;
+background:#DCDCDC;
+height:540px;
+display:block;
 }
 .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -139,8 +174,9 @@ margin-left:4%;
     border-radius: 15px;
     display: inline-block;
     margin: 1%;
-    background:#DCDCDC;
+    background:WHITE;
     cursor:pointer;
+    height:180px;
   }
   
   .card:hover {
@@ -159,7 +195,11 @@ margin-left:4%;
   .card img {
     float: right;
     max-width: 40%; /* Ajusta a largura máxima da imagem para metade do cartão */
-    height: auto; /* Mantém a proporção da imagem */
+    height:180px; /* Mantém a proporção da imagem */
     margin-left: 16%;
     border-radius:10px;
+  }
+
+  .caixaWhite{
+    display:none;
   }
