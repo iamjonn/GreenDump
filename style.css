@@ -36,6 +36,7 @@
 header a {
   text-decoration: none;
   color:white;
+  font-family: 'Mooli', sans-serif;
 }
 
 .header-left {
@@ -133,7 +134,7 @@ header a:hover {
   padding-bottom:6px;
   background: #106210;
   color:white;
-  font-family: 'Lilita One', cursive;
+  font-family: 'Mooli', sans-serif;
   font-size: 22px;
   cursor: pointer;
   text-align:center;
@@ -260,7 +261,7 @@ header a:hover {
   height:40px;
   background: linear-gradient(to right, #86c3a5, #75b364);
   color:white;
-  font-family: 'Lilita One', cursive;
+  font-family: 'Mooli', sans-serif;
   cursor: pointer;
   border-radius:20px;
   border:solid black 1px;
@@ -268,6 +269,7 @@ header a:hover {
 #Descarte button a{
 text-decoration: none;
 color:black;
+font-family: 'Mooli', sans-serif;
 }
 
 #Descarte button:hover{
@@ -336,6 +338,7 @@ footer {
   top: 274vh;
   height:120px;
   z-index:3;
+  font-family: 'Mooli', sans-serif;
 }
 
 footer .container {
